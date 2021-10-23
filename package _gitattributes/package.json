@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "install": "^0.13.0"
+  }
+}

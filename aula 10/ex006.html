@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Dom</title>
+    <style>
+        #area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 202px;
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()" >
+
+        <p>Interaja..</p>
+
+    </div>
+
+    <!--onclick="clicar()" onmouseenter="entrar()" onmouseleave="sair()"-->
+
+    <script>
+
+        a.addEventListener('click' , clicar)
+        b.addEventListener('mouseenter' , entrar)
+        c.addEventListener('mouseout' , sair)
+
+        function  clicar() {
+
+            var a = window.document.getElementById('area')
+            
+            a.innerText = 'Clicou Fofa Parabéns '
+             
+            a.style.background = 'red'
+
+        }
+
+        function entrar() {
+
+
+            var b = window.document.getElementById('area')
+            b.innerText="Entrou Fofa Arrazou"
+
+        }
+
+        function sair() {
+            
+            var c = window.document.getElementById('area')
+            c.innerText="IIIhh Saiu Fofa "
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

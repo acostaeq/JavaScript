@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(245, 173, 185);
+            color: rgba(83, 11, 119, 0.685);
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Qual a Nacionalidade  </h1>
+
+    Digite sua nacionalidade<input type="text" name="nac" id="nac">
+    <input type="button" value="Confirmar" onclick="nacional()">
+
+    <div id="res"></div>
+
+
+    <script>
+
+        function nacional() {
+
+            var nacio =  window.document.getElementById('nac')//essa variável pega o valor do input de texto acima 
+            var res = window.document.getElementById('res')// essa varável pega o valor da div
+
+            var vel = String(nacio.value)//Sempre que for ler uma string você tera que declara-lá  esse valor converte o valor nacio em string//
+
+            if (vel == 'EUA'){
+
+                res.innerHTML =`Você é estadunidense ! `
+
+            }else {
+                res.innerHTML =`Você é Brasileiro`
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

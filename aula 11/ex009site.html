@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: rgb(245, 173, 185);
+            color: rgba(83, 11, 119, 0.685);
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<h2> Sua nacionalidade </h2>
+    Qual o seu país ? <input type="text" name="pais" id="pais">
+    <input type="button" value="Pesquisar" onclick="clicar()">
+    <div id="res">
+    </div>
+    <script>
+        function clicar(){
+            var paisp = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+
+            var vel = String(paisp.value)//Sempre que for ler uma string você tera que declara-lá //
+            res.innerText = `Seu pais é ${vel}` 
+        if(vel == 'Brasil'){
+            res.innerHTML = 'Você é Brasileiro'
+        }else(
+            res.innerHTML = 'Você é estrangeiro'
+        )
+
+        }
+    </script>
+
+    </body>
+</html>
