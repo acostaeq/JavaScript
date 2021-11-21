@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+
+p {
+    
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(14, 98, 109);
+
+}
+
+h1 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+div#dados {
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    height: 120px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+div#res {
+    background-color: white;
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+input#inicio {
+   margin-left: 20px;
+    height: 20px;
+    
+}
+
+input#fim {
+    margin-left: 40px;
+    height: 20px;
+
+}
+
+input#passo {
+    height: 20px;
+    margin-left: 5px;
+}
+
+
+footer {
+
+    color: white;
+    text-align: center;
+
+}
